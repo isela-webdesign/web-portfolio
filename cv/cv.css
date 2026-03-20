@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+/* =======================
+   CV – Stylesheet
+======================= */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: #222;
+}
+
+header p {
+  color: #555;
+  margin-top: 5px;
+  font-size: 0.95em;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #0077cc;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0077cc;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+/* Experiencia laboral y educación */
+.job, .education {
+  margin-bottom: 20px;
+}
+
+.job h3, .education h3 {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+.job span, .education span {
+  display: block;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.job ul {
+  list-style: disc inside;
+  margin-top: 5px;
+}
+
+/* Coursework & Technical Training */
+.coursework ul {
+  list-style: disc inside;
+  margin-top: 5px;
+}
+
+/* Skills & Certifications como “tags” */
+.skills ul, .certifications ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skills li, .certifications li {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .skills li, .certifications li {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+}
